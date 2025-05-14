@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Google</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      text-align: center;
+    }
+    .google-logo {
+      margin-top: 150px;
+    }
+    .search-box {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      width: 600px;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: 1px solid #dcdcdc;
+      border-radius: 24px;
+      outline: none;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    input[type="submit"] {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      color: #5f6368;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      border: 1px solid #c6c6c6;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #f2f2f2;
+      padding: 10px 0;
+      font-size: 14px;
+      color: #5f6368;
+    }
+  </style>
+</head>
+<body>
+  <div class="google-logo">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google">
+  </div>
+  <div class="search-box">
+    <input type="text" placeholder="Пошук Google">
+  </div>
+  <div class="buttons">
+    <input type="submit" value="Пошук Google">
+    <input type="submit" value="Мені пощастить">
+  </div>
+  <footer>
+    Україна
+  </footer>
+</body>
+</html>
+Що тут є:
+Логотип Google (підтягнутий з офіційного сайту)
+
+Поле пошуку
+
+Кнопки "Пошук Google" та "Мені пощастить"
+
+Простий футер
+
+⚠️ Цей сайт — лише копія для навчальних цілей і не має функціоналу реального пошуку.
+
+Хочеш, щоб ще й поле пошуку щось робило (наприклад, перекидало на реальний Google)?
+
+
+
+
+
+
+
+4o
+Ви сказали:
+і щоб можна було шукати там що хочеш
+
+
+Програма ChatGPT сказала:
+Щоб поле пошуку працювало — тобто щоб після введення запиту воно перекидало на результати пошуку Google — можна використати просту HTML-форму, яка відправляє запит на Google. Ось оновлена версія сайту:
+
+html
+Копіювати
+Редагувати
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Google</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      text-align: center;
+    }
+    .google-logo {
+      margin-top: 150px;
+    }
+    .search-box {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      width: 600px;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: 1px solid #dcdcdc;
+      border-radius: 24px;
+      outline: none;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    input[type="submit"] {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      color: #5f6368;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      border: 1px solid #c6c6c6;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #f2f2f2;
+      padding: 10px 0;
+      font-size: 14px;
+      color: #5f6368;
+    }
+  </style>
+</head>
+<body>
+  <div class="google-logo">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google">
+  </div>
+  <form action="https://www.google.com/search" method="GET" class="search-box">
+    <input type="text" name="q" placeholder="Пошук Google">
+    <div class="buttons">
+      <input type="submit" value="Пошук Google">
+      <input type="submit" name="btnI" value="Мені пощастить">
+    </div>
+  </form>
+  <footer>
+    Україна
+  </footer>
+</body>
+</html>
